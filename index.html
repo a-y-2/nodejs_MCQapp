@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>MCQapp</title>
+    <style>
+body {
+    background-color: #cbf3f0;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.out {
+   
+   box-sizing: border-box;
+   width: 50px;
+   height: 50px;
+   margin-bottom: 10px;
+   margin-top: 10px;
+   padding: 5px 5px 5px 5px;
+   color: white;
+   background-color: #ff206e;
+   border: 1px solid black;
+   width: 100%;
+   border-radius: 2px;
+   text-align: center;
+   font-weight: bold;
+}
+.calc {
+    background-color: #41ead4;
+    padding: 20px 20px 20px 20px;
+    border-radius: 3px;
+    max-width: 700px;
+    margin: auto;
+}
+
+.display {
+    overflow-x: hidden;
+    padding: 5px 5px 5px 5px;
+    
+    border-radius: 2px;
+    min-height: 20px;
+    max-width: 100%;
+    background: #eae2b7;
+    margin: 2px 2px 20px 2px;
+}
+
+
+
+.button {
+    background-color:#fbff12;
+    width: 30px;
+    height: 30px;
+    margin-right: 6px;
+    border-radius: 50%;
+}
+
+
+</style>
+</head>
+<body>
+<div class="page">
+<h1>MCQapp</h1>
+
+<br />
+<form target="" method="post"> 
+<table class="calc" align="center">
+    
+    <tr>
+        <td colspan="2">Which is the highest mountain peak in India?</td>
+        <!-- <td colspan="2"><input type="text" name="y" value="{{Y}}" class="display"></input></td> -->
+    </tr>
+    <br/>
+    
+        <tr><td><input type="submit" name="fn" value="1" class="button" />K2</td></tr>
+        <tr><td><input type="submit" name="fn" value="2" class="button" />Kanchenjunga</td></tr>
+        <tr><td><input type="submit" name="fn" value="3" class="button" />Anamudi</td></tr>
+        <tr><td><input type="submit" name="fn" value="4" class="button" />Nanda Devi</td></tr>
+    
+    <tr align="center">
+        <td colspan="8"><div class="out">{{OUTPUT}}</div></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
